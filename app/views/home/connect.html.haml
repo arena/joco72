@@ -19,16 +19,16 @@
     %ul
       %li.facebook
         %h3 Use your</br>Facebook account
-        %p <strong>Now:</strong> Create a Facebook group with your inner circle so you can easily send messages, share supplies, and make a plan together. Like <a href="http://#{@city_connection.facebook_page_url}" target="_blank">#{@city.abbreviation}72</a> on Facebook.
+        %p <strong>Now:</strong> Create a Facebook group with your inner circle so you can easily send messages, share supplies, and make a plan together. Like <a href="https://www.facebook.com/jocoem" target="_blank">Johnson County Emergency Management</a> on Facebook.
         %p <strong>In an emergency:</strong> Post your status to Facebook to let friends and family know you are ok.
       %li.twitter
         %h3 Check updates</br>on Twitter
         %p <strong>Now:</strong> Add emergency accounts to your Twitter feed, to stay informed. Some of our favorites: #{tweeter_accounts(@city_connection.twitter_accounts).html_safe}.
         %p <strong>In an emergency:</strong> Post about yourself and your area. Use <a href="https://twitter.com/search?q=%23#{@city.abbreviation}72" target="_blank">##{@city.abbreviation}72</a> to include them in the crowdsourced emergency feed.
       %li.drive
-        %h3 Save documents on</br>Google Drive
-        %p <strong>Now:</strong> Scan personal documents like your driver’s license, passport, and birth certificate. Save digital copies in the cloud through Google Drive.
-        %p <strong>In an emergency:</strong> Access your documents remotely in case you can't get home. Know that there is a safe copy in the cloud.
+        %h3 Save documents to</br>a cloud service
+        %p <strong>Now:</strong> Scan personal documents like your driver’s license, passport, and birth certificate. Save digital copies in the cloud through Google Drive or Dropbox.
+        %p <strong>In an emergency:</strong> Access your documents remotely in case you can't get home. Know that there is a safe copy stored in the cloud.
       - @city_connection.city_networks.included.each do |cn|
         %li
           - unless cn.logo.blank?
@@ -47,7 +47,7 @@
     %ul
       %li.use
         %h3 Connect through</br>your local networks.
-        %p Your neighborhood networks are important in an emergency too—consider the connections you already have—to your yoga studio, craft collective, spiritual groups, or friends in the neighborhood—so you can band together if something happens.
+        %p Your neighborhood networks are important in an emergency too—consider the connections you already have—to your local sports team, community garden group, spiritual groups, or friends in the neighborhood—so you can band together if something happens.
       %li.what
         %h3 How to</br>Connect
         %ul.your-net
