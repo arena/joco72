@@ -129,7 +129,7 @@
 
 .full-img-article {
 	@include row();
-	@include retina-image(/assets/static/gardening, 1020px 401px, jpg);
+	@include retina-image(/assets/static/cycling, 1020px 401px, jpg);
 	background-repeat: no-repeat;
 	padding: 0 30px;
 	text-shadow: 0 0 40px rgba(0, 0, 0, 0.4);
